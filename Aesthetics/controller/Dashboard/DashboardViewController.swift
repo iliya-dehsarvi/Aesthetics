@@ -40,6 +40,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
 		print(indexPath.row)
 		print(muscles[indexPath.row])
 		cell.workoutTile.text = muscles[indexPath.row]
+		cell.row = indexPath.row
 		return cell
 	}
 	

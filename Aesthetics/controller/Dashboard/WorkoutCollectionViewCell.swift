@@ -9,16 +9,20 @@ import UIKit
 
 class WorkoutCollectionViewCell: UICollectionViewCell {
 
-	@IBOutlet weak var workoutImage: UIImageView!
+	@IBOutlet var workoutImage: UIImageView!
 	@IBOutlet weak var workoutName: UILabel!
 	@IBOutlet weak var workoutTags: UILabel!
 	
 	func setWorkoutImage(_ stringURL: String) {
-		let imageURL = URL(string: stringURL)
-//		self.workoutImage.load(url: imageURL!)
-		if let workoutImage = self.workoutImage  {
-			workoutImage.load(url: imageURL!)
-		}
+//		DispatchQueue.main.async {
+
+			let imageURL = URL(string: stringURL)
+			if let workoutImage = self.workoutImage  {
+				workoutImage.load(url: imageURL!)
+			}
+//			let gifImage = UIImage.gif(url: stringURL)
+//			self.workoutImage = UIImageView(image: gifImage)
+//		}
 	}
 	
 	func setWorkoutName(_ name: String) {
@@ -47,7 +51,7 @@ extension UIImageView {
 		  if let data = try? Data(contentsOf: url) {
 			 if let image = UIImage(data: data) {
 				DispatchQueue.main.async {
-				    self?.image = image
+					self?.image = image
 				}
 			 }
 		  }

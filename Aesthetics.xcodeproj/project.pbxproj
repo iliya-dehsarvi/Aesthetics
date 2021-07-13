@@ -21,6 +21,7 @@
 		26126A71269C25C8000C34E2 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A70269C25C8000C34E2 /* Workouts.swift */; };
 		26126A76269C25D9000C34E2 /* Workouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 26126A75269C25D9000C34E2 /* Workouts.json */; };
 		26126A7B269C2CA1000C34E2 /* WorkoutsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A7A269C2CA1000C34E2 /* WorkoutsProcessor.swift */; };
+		26B7C411269D767C00A36271 /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7C410269D767C00A36271 /* SwiftGIF.swift */; };
 		26E8856C269CB40400061E67 /* WorkoutsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8856A269CB40400061E67 /* WorkoutsCollectionViewCell.swift */; };
 		26E88573269CB82500061E67 /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E88571269CB82500061E67 /* WorkoutsTableViewCell.swift */; };
 		26E88574269CB82500061E67 /* WorkoutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E88572269CB82500061E67 /* WorkoutsTableViewCell.xib */; };
@@ -66,6 +67,7 @@
 		26126A70269C25C8000C34E2 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
 		26126A75269C25D9000C34E2 /* Workouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Workouts.json; sourceTree = "<group>"; };
 		26126A7A269C2CA1000C34E2 /* WorkoutsProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsProcessor.swift; sourceTree = "<group>"; };
+		26B7C410269D767C00A36271 /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		26E8856A269CB40400061E67 /* WorkoutsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsCollectionViewCell.swift; sourceTree = "<group>"; };
 		26E88571269CB82500061E67 /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
 		26E88572269CB82500061E67 /* WorkoutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutsTableViewCell.xib; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				26126A6F269C2456000C34E2 /* Session */,
 				26126A6E269C2445000C34E2 /* History */,
 				26126A6D269C2425000C34E2 /* Dashboard */,
+				26B7C415269D768500A36271 /* GIF */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -207,6 +210,14 @@
 				26126A56269BDFB6000C34E2 /* SessionViewController.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		26B7C415269D768500A36271 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				26B7C410269D767C00A36271 /* SwiftGIF.swift */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B7C411269D767C00A36271 /* SwiftGIF.swift in Sources */,
 				26126A20269BDE73000C34E2 /* Aesthetics.xcdatamodeld in Sources */,
 				26126A1A269BDE73000C34E2 /* DashboardViewController.swift in Sources */,
 				26126A16269BDE73000C34E2 /* AppDelegate.swift in Sources */,

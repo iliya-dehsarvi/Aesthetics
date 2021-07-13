@@ -9,6 +9,8 @@ import UIKit
 
 class WorkoutsTableViewCell: UITableViewCell {
 	
+	var row = 0
+	
 	let muscles = [
 		"Abdominals", "Biceps", "Calves", "Chest",
 		"Forearms", "Glutes", "Hamstrings", "Lats", "Lowerback",
@@ -34,6 +36,7 @@ class WorkoutsTableViewCell: UITableViewCell {
 		//		workoutsCollectionView.register(UINib(nibName: "WorkoutsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "WorkoutsCollectionViewCellID")
 		self.workoutsCollectionView.delegate = self
 		self.workoutsCollectionView.dataSource = self
+		self.workoutsCollectionView.showsHorizontalScrollIndicator = false
 		//		workoutsCollectionView.tag = row
 		let layout = UICollectionViewFlowLayout()
 		layout.scrollDirection = .horizontal
@@ -74,17 +77,18 @@ extension WorkoutsTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
 		//		cell.workoutTags.text! = String("#\((workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].difficulty) #\((workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].equipment)")
 		//		let image_url = URL(string: (workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].image_url[0])
 		//		cell.workoutImage.load(url: image_url!)
-		cell.setWorkoutName((workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].name)
-		cell.setWorkoutTags(forLevel: (workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].difficulty, forType: (workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].equipment)
-		cell.setWorkoutImage((workoutsProcessor.muscles?[muscles[collectionView.tag]]!)![indexPath.item].image_url[0])
+		
+		cell.setWorkoutName((workoutsProcessor.muscles?[muscles[row]]!)![indexPath.row].name)
+		cell.setWorkoutTags(forLevel: (workoutsProcessor.muscles?[muscles[row]]!)![indexPath.row].difficulty, forType: (workoutsProcessor.muscles?[muscles[row]]!)![indexPath.row].equipment)
+		cell.setWorkoutImage((workoutsProcessor.muscles?[muscles[row]]!)![indexPath.row].image_url[1])
 		
 		return cell
 	}
 	
 	func collectionView(_ collectionView: UICollectionView,
 					numberOfItemsInSection section: Int) -> Int {
-		//		return (workoutsProcessor.muscles?[muscles[collectionView.tag]]!)!.count
-		return 5
+				return (workoutsProcessor.muscles?[muscles[row]]!)!.count
+//		return 5
 	}
 	
 	func numberOfSections(in collectionView: UICollectionView) -> Int {

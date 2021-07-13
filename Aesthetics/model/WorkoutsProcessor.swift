@@ -15,20 +15,20 @@ public class WorkoutsProcessor {
 		if let localData = self.readLocalFile(forName: "Workouts") {
 			self.workouts = self.parse(jsonData: localData)!
 			self.muscles = [
-				"Abdominals": workouts?.male.abdominals,
-				"Biceps": workouts?.male.biceps,
-				"Calves": workouts?.male.calves,
-				"Chest": workouts?.male.chest,
-				"Forearms": workouts?.male.forearms,
-				"Glutes": workouts?.male.glutes,
-				"Hamstrings": workouts?.male.hamstrings,
-				"Lats": workouts?.male.lats,
-				"Lowerback": workouts?.male.lowerback,
-				"Quads": workouts?.male.quads,
-				"Shoulders": workouts?.male.shoulders,
-				"Traps": workouts?.male.traps,
-				"Traps (middle)": workouts?.male.traps_middle,
-				"Triceps": workouts?.male.triceps
+				"Abdominals": workouts?.female.abdominals,
+				"Biceps": workouts?.female.biceps,
+				"Calves": workouts?.female.calves,
+				"Chest": workouts?.female.chest,
+				"Forearms": workouts?.female.forearms,
+				"Glutes": workouts?.female.glutes,
+				"Hamstrings": workouts?.female.hamstrings,
+				"Lats": workouts?.female.lats,
+				"Lowerback": workouts?.female.lowerback,
+				"Quads": workouts?.female.quads,
+				"Shoulders": workouts?.female.shoulders,
+				"Traps": workouts?.female.traps,
+				"Traps (middle)": workouts?.female.traps_middle,
+				"Triceps": workouts?.female.triceps
 			]
 		}
 	}
