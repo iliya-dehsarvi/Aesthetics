@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutCollectionViewCellID" id="gTV-IL-0wX" customClass="WorkoutCollectionViewCell" customModule="Aesthetics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="228"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Intermediate #Barbell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox0-wL-dCo">
+                        <rect key="frame" x="0.0" y="207" width="190" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="190" id="J8x-Ag-Ec0"/>
+                            <constraint firstAttribute="height" constant="15" id="Kge-1e-TTI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="systemPinkColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench Press" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-fZ-bgq">
+                        <rect key="frame" x="0.0" y="193" width="190" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="pbs-in-ezb"/>
+                            <constraint firstAttribute="width" constant="190" id="s2j-Wc-Lkn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="20n-gN-4Q0">
+                        <rect key="frame" x="0.0" y="0.5" width="190" height="189"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="ZYm-ga-ZRI"/>
+                            <constraint firstAttribute="width" constant="190" id="anf-ju-BH6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bWg-fZ-bgq" secondAttribute="trailing" id="06p-Uu-2MN"/>
+                <constraint firstAttribute="trailing" secondItem="20n-gN-4Q0" secondAttribute="trailing" id="1ZG-Hf-rHj"/>
+                <constraint firstAttribute="trailing" secondItem="ox0-wL-dCo" secondAttribute="trailing" id="2M3-Xf-pYJ"/>
+                <constraint firstAttribute="bottom" secondItem="bWg-fZ-bgq" secondAttribute="bottom" symbolic="YES" id="2WZ-Uo-TZh"/>
+                <constraint firstItem="ox0-wL-dCo" firstAttribute="top" secondItem="20n-gN-4Q0" secondAttribute="bottom" constant="17" id="6Lf-Uv-VMt"/>
+                <constraint firstItem="bWg-fZ-bgq" firstAttribute="top" secondItem="20n-gN-4Q0" secondAttribute="bottom" constant="3" id="I68-la-aD7"/>
+                <constraint firstAttribute="bottom" secondItem="ox0-wL-dCo" secondAttribute="bottom" constant="6" id="ObZ-n9-Z14"/>
+                <constraint firstItem="bWg-fZ-bgq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aVa-m8-wTM"/>
+                <constraint firstItem="ox0-wL-dCo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d0B-n2-41K"/>
+                <constraint firstItem="20n-gN-4Q0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hBb-LD-KOg"/>
+                <constraint firstItem="20n-gN-4Q0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jiF-Ek-4eE"/>
+                <constraint firstItem="bWg-fZ-bgq" firstAttribute="top" secondItem="20n-gN-4Q0" secondAttribute="bottom" constant="3" id="m7f-9x-gNa"/>
+            </constraints>
+            <size key="customSize" width="133" height="166"/>
+            <connections>
+                <outlet property="workoutImage" destination="20n-gN-4Q0" id="2b5-xe-1ct"/>
+                <outlet property="workoutName" destination="bWg-fZ-bgq" id="2Ss-u1-vaL"/>
+                <outlet property="workoutTags" destination="ox0-wL-dCo" id="tze-tV-NMm"/>
+            </connections>
+            <point key="canvasLocation" x="57.971014492753625" y="166.74107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="doc.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
