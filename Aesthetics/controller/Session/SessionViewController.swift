@@ -12,7 +12,8 @@ class SessionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+	    let image = UIImage.gif(url: "musclewiki.com/media/uploads/Male-Barbell-BicepCurl-Front.gif")
+	    self.navigationItem.titleView = UIImageView(image: image)
     }
     
 

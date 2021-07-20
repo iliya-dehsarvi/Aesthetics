@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		26126A16269BDE73000C34E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A15269BDE73000C34E2 /* AppDelegate.swift */; };
 		26126A18269BDE73000C34E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A17269BDE73000C34E2 /* SceneDelegate.swift */; };
-		26126A1A269BDE73000C34E2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A19269BDE73000C34E2 /* DashboardViewController.swift */; };
+		26126A1A269BDE73000C34E2 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A19269BDE73000C34E2 /* LibraryViewController.swift */; };
 		26126A1D269BDE73000C34E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26126A1B269BDE73000C34E2 /* Main.storyboard */; };
 		26126A20269BDE73000C34E2 /* Aesthetics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26126A1E269BDE73000C34E2 /* Aesthetics.xcdatamodeld */; };
 		26126A22269BDE7C000C34E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26126A21269BDE7C000C34E2 /* Assets.xcassets */; };
@@ -21,7 +21,10 @@
 		26126A71269C25C8000C34E2 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A70269C25C8000C34E2 /* Workouts.swift */; };
 		26126A76269C25D9000C34E2 /* Workouts.json in Resources */ = {isa = PBXBuildFile; fileRef = 26126A75269C25D9000C34E2 /* Workouts.json */; };
 		26126A7B269C2CA1000C34E2 /* WorkoutsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26126A7A269C2CA1000C34E2 /* WorkoutsProcessor.swift */; };
-		26E8856C269CB40400061E67 /* WorkoutsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E8856A269CB40400061E67 /* WorkoutsCollectionViewCell.swift */; };
+		262A44BF26A4D55F00873740 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A44BE26A4D55F00873740 /* SessionsViewController.swift */; };
+		262A44C226A4D61B00873740 /* sessionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262A44C026A4D61B00873740 /* sessionsTableViewCell.swift */; };
+		262A44C326A4D61B00873740 /* sessionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262A44C126A4D61B00873740 /* sessionsTableViewCell.xib */; };
+		26B7C411269D767C00A36271 /* SwiftGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7C410269D767C00A36271 /* SwiftGIF.swift */; };
 		26E88573269CB82500061E67 /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E88571269CB82500061E67 /* WorkoutsTableViewCell.swift */; };
 		26E88574269CB82500061E67 /* WorkoutsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E88572269CB82500061E67 /* WorkoutsTableViewCell.xib */; };
 		26E88589269D290D00061E67 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E88587269D290D00061E67 /* WorkoutCollectionViewCell.swift */; };
@@ -49,7 +52,7 @@
 		26126A12269BDE73000C34E2 /* Aesthetics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aesthetics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26126A15269BDE73000C34E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26126A17269BDE73000C34E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26126A19269BDE73000C34E2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		26126A19269BDE73000C34E2 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		26126A1C269BDE73000C34E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26126A1F269BDE73000C34E2 /* Aesthetics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aesthetics.xcdatamodel; sourceTree = "<group>"; };
 		26126A21269BDE7C000C34E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +69,10 @@
 		26126A70269C25C8000C34E2 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
 		26126A75269C25D9000C34E2 /* Workouts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Workouts.json; sourceTree = "<group>"; };
 		26126A7A269C2CA1000C34E2 /* WorkoutsProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsProcessor.swift; sourceTree = "<group>"; };
-		26E8856A269CB40400061E67 /* WorkoutsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsCollectionViewCell.swift; sourceTree = "<group>"; };
+		262A44BE26A4D55F00873740 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		262A44C026A4D61B00873740 /* sessionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionsTableViewCell.swift; sourceTree = "<group>"; };
+		262A44C126A4D61B00873740 /* sessionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sessionsTableViewCell.xib; sourceTree = "<group>"; };
+		26B7C410269D767C00A36271 /* SwiftGIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIF.swift; sourceTree = "<group>"; };
 		26E88571269CB82500061E67 /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
 		26E88572269CB82500061E67 /* WorkoutsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutsTableViewCell.xib; sourceTree = "<group>"; };
 		26E88587269D290D00061E67 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,20 +183,20 @@
 			children = (
 				26126A6F269C2456000C34E2 /* Session */,
 				26126A6E269C2445000C34E2 /* History */,
-				26126A6D269C2425000C34E2 /* Dashboard */,
+				26126A6D269C2425000C34E2 /* Library */,
+				26B7C415269D768500A36271 /* GIF */,
 			);
 			path = controller;
 			sourceTree = "<group>";
 		};
-		26126A6D269C2425000C34E2 /* Dashboard */ = {
+		26126A6D269C2425000C34E2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				26126A19269BDE73000C34E2 /* DashboardViewController.swift */,
-				26E8856A269CB40400061E67 /* WorkoutsCollectionViewCell.swift */,
+				26126A19269BDE73000C34E2 /* LibraryViewController.swift */,
 				26E88571269CB82500061E67 /* WorkoutsTableViewCell.swift */,
 				26E88587269D290D00061E67 /* WorkoutCollectionViewCell.swift */,
 			);
-			path = Dashboard;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		26126A6E269C2445000C34E2 /* History */ = {
@@ -205,8 +211,19 @@
 			isa = PBXGroup;
 			children = (
 				26126A56269BDFB6000C34E2 /* SessionViewController.swift */,
+				262A44BE26A4D55F00873740 /* SessionsViewController.swift */,
+				262A44C026A4D61B00873740 /* sessionsTableViewCell.swift */,
+				262A44C126A4D61B00873740 /* sessionsTableViewCell.xib */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		26B7C415269D768500A36271 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				26B7C410269D767C00A36271 /* SwiftGIF.swift */,
+			);
+			path = GIF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26126A76269C25D9000C34E2 /* Workouts.json in Resources */,
+				262A44C326A4D61B00873740 /* sessionsTableViewCell.xib in Resources */,
 				26126A25269BDE7C000C34E2 /* LaunchScreen.storyboard in Resources */,
 				26E8858A269D290D00061E67 /* WorkoutCollectionViewCell.xib in Resources */,
 				26E88574269CB82500061E67 /* WorkoutsTableViewCell.xib in Resources */,
@@ -342,11 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262A44C226A4D61B00873740 /* sessionsTableViewCell.swift in Sources */,
+				26B7C411269D767C00A36271 /* SwiftGIF.swift in Sources */,
+				262A44BF26A4D55F00873740 /* SessionsViewController.swift in Sources */,
 				26126A20269BDE73000C34E2 /* Aesthetics.xcdatamodeld in Sources */,
-				26126A1A269BDE73000C34E2 /* DashboardViewController.swift in Sources */,
+				26126A1A269BDE73000C34E2 /* LibraryViewController.swift in Sources */,
 				26126A16269BDE73000C34E2 /* AppDelegate.swift in Sources */,
 				26E88589269D290D00061E67 /* WorkoutCollectionViewCell.swift in Sources */,
-				26E8856C269CB40400061E67 /* WorkoutsCollectionViewCell.swift in Sources */,
 				26126A7B269C2CA1000C34E2 /* WorkoutsProcessor.swift in Sources */,
 				26126A71269C25C8000C34E2 /* Workouts.swift in Sources */,
 				26126A57269BDFB6000C34E2 /* SessionViewController.swift in Sources */,
