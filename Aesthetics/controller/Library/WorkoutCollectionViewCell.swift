@@ -19,6 +19,7 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
 			let imageURL = URL(string: stringURL)
 			if let workoutImage = self.workoutImage  {
 				workoutImage.load(url: imageURL!)
+//				activityIndicator.isHidden = true
 			}
 //			let gifImage = UIImage.gif(url: stringURL)
 //			self.workoutImage = UIImageView(image: gifImage)
@@ -41,7 +42,6 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
 		super.awakeFromNib()
 		self.workoutImage.layer.cornerRadius = 5
 		self.workoutImage.layer.masksToBounds = true
-		
 	}
 }
 
